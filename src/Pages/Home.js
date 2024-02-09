@@ -5,6 +5,7 @@ import UsersCard from './Card/UsersCard';
 
 const Home = () => {
     const userList = useLoaderData().users;
+    console.log(userList);
     return (
         <div>
             {

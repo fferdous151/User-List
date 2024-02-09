@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from '../src/Pages/Main';
 import Home from '../src/Pages/Home';
+import UserDetailsCard from './Pages/Card/UserDetailsCard';
 import './App.css';
 
 function App() {
@@ -13,6 +14,13 @@ function App() {
           path: '/',
           loader: () => fetch('https://dummyjson.com/users/'),
           element: <Home></Home>
+        },
+        {
+          path: '/user/:userID',
+          loader: async ({ params }) => {
+            return fetch(`https://dummyjson.com/users/${params.userID}`)
+          },
+          element: <UserDetailsCard></UserDetailsCard>
         }
       ]
     }
