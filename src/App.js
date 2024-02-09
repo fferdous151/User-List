@@ -23,10 +23,14 @@ function App() {
           element: <UserDetailsCard></UserDetailsCard>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <div><p>This route is not found</p></div>
     }
   ])
   return (
-    <div>
+    <div className='mx-auto bg-green-300'>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
