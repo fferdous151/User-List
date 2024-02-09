@@ -8,7 +8,7 @@ const UsersCard = ({ user }) => {
             <Link className='p-6 bg-gray-800' to={`/user/${id}`}><figure><img src={image} /></figure></Link>
             <div className="card-body bg-green-500">
                 <p className="text-2xl">{firstName} {lastName}</p>
-                <p><span className="text-xl">Address: </span><span className='text-lg'>{address.address}, {address.city}</span></p>
+                <p><span className="text-xl">Address: </span><span className='text-lg'>{address.address}, {address.city}, {address.state}</span></p>
                 <p><span className="text-xl">Email: </span><span className="text-lg">
                     {email}</span></p>
                 <p><span className='text-xl'>Company: </span>

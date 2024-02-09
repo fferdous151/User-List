@@ -30,7 +30,7 @@ function App() {
     }
   ])
   return (
-    <div className='mx-auto bg-green-300'>
+    <div className='mx-auto bg-green-300 '>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
