@@ -3,6 +3,8 @@ import Main from '../src/Pages/Main';
 import Home from '../src/Pages/Home';
 import UserDetailsCard from './Pages/Card/UserDetailsCard';
 import './App.css';
+import AddUser from './Pages/AddUser';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -21,6 +23,10 @@ function App() {
             return fetch(`https://dummyjson.com/users/${params.userID}`)
           },
           element: <UserDetailsCard></UserDetailsCard>
+        },
+        {
+          path: '/adduser',
+          element: <AddUser></AddUser>
         }
       ]
     },

@@ -5,7 +5,7 @@ import UsersCard from './Card/UsersCard';
 
 const Home = () => {
     const userList = useLoaderData().users;
-    console.log(userList);
+    //console.log(userList);
     return (
         <div className="grid m-8 gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {
